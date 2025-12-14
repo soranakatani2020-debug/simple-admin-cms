@@ -49,26 +49,25 @@ Flaskを用いて、
 
 ## ディレクトリ構成
 
+```text
 .
 ├─ app.py
 ├─ models.py
 ├─ instance/
-│ └─ app.db
+│  └─ app.db
 ├─ templates/
-│ ├─ index.html
-│ ├─ about.html
-│ ├─ contact.html
-│ ├─ login.html
-│ └─ admin/
-│ ├─ dashboard.html
-│ ├─ contacts.html
-│ └─ contact_detail.html
+│  ├─ index.html
+│  ├─ about.html
+│  ├─ contact.html
+│  ├─ login.html
+│  └─ admin/
+│     ├─ dashboard.html
+│     ├─ contacts.html
+│     └─ contact_detail.html
 └─ static/
-└─ css/
-└─ style.css
+   └─ css/
+      └─ style.css
 
-yaml
-コードをコピーする
 
 ---
 
@@ -99,5 +98,6 @@ SQLiteを使用し、簡単に導入できる構成にした
 バリデーション強化
 
 デザイン改善
+
 
 メール通知機能

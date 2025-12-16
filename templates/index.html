@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block title %}ホーム{% endblock %} {% block content
+%}
+<h2>ようこそ</h2>
+<p>お問い合わせ管理システムです。</p>
+
+<div class="button-area">
+  <a href="{{ url_for('contact') }}" class="btn">お問い合わせ</a>
+  <a href="{{ url_for('admin_dashboard') }}" class="btn btn-sub">管理画面</a>
+</div>
+{% endblock %}

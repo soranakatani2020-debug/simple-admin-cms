@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %}お問い合わせ{% endblock %} {% block
+content %}
+<h2>お問い合わせ</h2>
+
+<form method="post">
+  <label>お名前</label>
+  <input type="text" name="name" required />
+
+  <label>メールアドレス</label>
+  <input type="email" name="email" required />
+
+  <label>内容</label>
+  <textarea name="message" rows="5" required></textarea>
+
+  <button type="submit">送信</button>
+  {% if success %}
+  <p class="success">送信が完了しました。</p>
+  {% endif %}
+</form>
+{% endblock %}

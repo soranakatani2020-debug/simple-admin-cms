@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}管理画面{% endblock %} {% block
+content %}
+<h2>管理画面</h2>
+<p>管理メニューを選択してください。</p>
+
+<div class="admin-menu">
+  <a href="{{ url_for('admin_contacts') }}" class="admin-card">
+    <h3>お問い合わせ管理</h3>
+    <p>お問い合わせ内容の確認・対応状況の更新</p>
+  </a>
+
+  <!-- 将来用（今はダミーでもOK） -->
+  <div class="admin-card disabled">
+    <h3>ユーザー管理</h3>
+    <p>（準備中）</p>
+  </div>
+</div>
+{% endblock %}
